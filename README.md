@@ -50,7 +50,7 @@ We should now be able to see our Stage TEN output as a clean isolated video sour
 ![image](https://user-images.githubusercontent.com/2575698/203500549-faff82c6-de40-4657-9aae-4ffb70537fbd.png)
 
 
-We can apply any overlay we want to on this video in OBS, dynamic or otherwise, and then publish our OBS video mix to Youtube.
+We can apply any overlay we want on to this video in OBS, dynamic or otherwise, and then publish our OBS video mix to Youtube.
 
 Guests within Stage TEN will see the video as well, minus any overlays that were added in OBS.
 
@@ -59,4 +59,6 @@ Whoever is managing OBS in this setup simply needs a stable and wired Internet c
 If at any point control of the Stage TEN studio needs to be transferred to a different guest, or the studio needs to be restarted, the output to Youtube itself will not be interrupted in this setup. Only if OBS stops publishing will the stream stop.  It would be possible to even switch between two different Stage TEN outputs in OBS, allowing for one creator to take over for another creator mid-stream, without the show being interrupted.
 
 
+##### Support
+Premium users of Stage TEN can Ping Steve on the Stage TEN Discord server at https://discord.com/invite/y2yKVBm for live help with this feature and setup, although please understand it is not an official feature offered by Stage TEN and it's access may be removed at any time
 
