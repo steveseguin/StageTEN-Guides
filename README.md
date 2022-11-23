@@ -1,6 +1,6 @@
 # Stage TEN into OBS guide
 
-This is an unofficial guide on using Stage TEN as a video source for OBS
+This is an unofficial guide on using the main Stage TEN as a video source in OBS
 
 ### Going from Stage TEN main output into OBS Studio
 
