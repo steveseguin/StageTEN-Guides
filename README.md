@@ -43,5 +43,5 @@ video{width:100%!important;height:100%!important;display:block;margin:0auto;padd
 
 The end results should look a bit like the following:
 
-<img src="https://user-images.githubusercontent.com/2575698/203493136-7c850584-4936-46cc-976b-e27c6e3cd9df.png" width="300" />
+<img src="https://user-images.githubusercontent.com/2575698/203493136-7c850584-4936-46cc-976b-e27c6e3cd9df.png" width="350" />
 
