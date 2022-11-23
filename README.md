@@ -2,6 +2,8 @@
 
 This is an unofficial guide on using Stage TEN as a video source for OBS
 
+![image](https://user-images.githubusercontent.com/2575698/203494522-90279f82-b99b-44f6-9851-90000c7a6835.png)
+
 
 ![image](https://user-images.githubusercontent.com/2575698/203493911-7b225b92-81a4-40f9-ba47-d51738253aad.png)
 
