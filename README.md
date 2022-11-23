@@ -14,7 +14,7 @@ We want only to grab the URL (https://play.stageten.tv/embed/XXXXXXX-AAAA-BBBB-Y
 
 We can then go live in Stage TEN, selecting the Stage TEN Interactive Player's output as the destination. 
 
-mg src="https://user-images.githubusercontent.com/2575698/203497924-8e9371fc-9098-4409-883d-857fc99e0bbb.png" height="170" />
+<img src="https://user-images.githubusercontent.com/2575698/203497924-8e9371fc-9098-4409-883d-857fc99e0bbb.png" height="170" />
 
 
 If we open the URL we extracted from the embed code now in our browser, we should see the output of Stage TEN.  There might be a chat-section and some other components visible, but we can remove those once we add the video to OBS in the next steps.
@@ -24,7 +24,7 @@ If we open the URL we extracted from the embed code now in our browser, we shoul
 
 In OBS, we want to create a Browser source. This is just like adding a video device to OBS, but from the menu of options, we select `Browser`.
 
-![image](https://user-images.githubusercontent.com/2575698/203499296-b34b0a08-7d0f-4948-b2f8-8058c18e2aed.png)
+<img src="https://user-images.githubusercontent.com/2575698/203499296-b34b0a08-7d0f-4948-b2f8-8058c18e2aed.png" height="170" />
 
 In the browser source settings, let's add our Stage TEN embed URL to the URL section.
 
