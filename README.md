@@ -24,7 +24,7 @@ If we open the URL we extracted from the embed code now in our browser, we shoul
 
 In OBS, we want to create a Browser source. This is just like adding a video device to OBS, but from the menu of options, we select `Browser`.
 
-<img src="https://user-images.githubusercontent.com/2575698/203499296-b34b0a08-7d0f-4948-b2f8-8058c18e2aed.png" height="170" />
+<img src="https://user-images.githubusercontent.com/2575698/203499296-b34b0a08-7d0f-4948-b2f8-8058c18e2aed.png" height="250" />
 
 In the browser source settings, let's add our Stage TEN embed URL to the URL section.
 
