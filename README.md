@@ -28,7 +28,7 @@ In OBS, we want to create a Browser source. This is just like adding a video dev
 
 In the browser source settings, let's add our Stage TEN embed URL to the URL section.
 
-Let's also ensure the Width is set to `1920` and the height is set to `1080`.
+Let's also ensure the Width is set to `1920` and the Height is set to `1080`.
 
 We then need to to check the box `Control audio via OBS`, otherwise the stream's audio won't be captured by OBS.
 
