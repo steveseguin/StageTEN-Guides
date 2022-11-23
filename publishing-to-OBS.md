@@ -8,7 +8,7 @@ While not available to the free-tier plan, the premium plans allow for embedding
 
 <img src="https://user-images.githubusercontent.com/2575698/203494522-90279f82-b99b-44f6-9851-90000c7a6835.png" height="170" />
 
-We want only to grab the URL (https://play.stageten.tv/embed/XXXXXXX-AAAA-BBBB-YYYYYYYYY) from the embed code, and not the entire code block.
+Since we are adding this page to OBS, and not a website though, we only want to grab the URL (https://play.stageten.tv/embed/XXXXXXX-AAAA-BBBB-YYYYYYYYY) from the embed code; not the entire code block.
 
 <img src="https://user-images.githubusercontent.com/2575698/203493911-7b225b92-81a4-40f9-ba47-d51738253aad.png" height="250" />
 
