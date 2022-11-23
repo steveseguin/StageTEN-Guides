@@ -47,7 +47,8 @@ The end results should look a bit like the following:
 
 We should now be able to see our Stage TEN output as a clean isolated video source in OBS, with very little delay.  If we stop the output of Stage TEN, it will also stop the video going into OBS Studio. If we go live in Stage TEN again, and select the `Stage TEN Interactive Player`, the video will appear in OBS again.  Once this has been setup, we do not need to reconfigure the settings, making the initial setup a generally one-time ordeal.
 
-![image](https://user-images.githubusercontent.com/2575698/203503355-5e535be4-810b-4f47-ab9f-bd56465c85bd.png)
+
+<img src="[https://user-images.githubusercontent.com/2575698/203493136-7c850584-4936-46cc-976b-e27c6e3cd9df.png](https://user-images.githubusercontent.com/2575698/203503355-5e535be4-810b-4f47-ab9f-bd56465c85bd.png" width="450" />
 
 We can apply any overlay we want on to this video in OBS, dynamic or otherwise, and then publish our OBS video mix to Youtube.
 
