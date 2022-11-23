@@ -10,7 +10,7 @@ While not available to the free-tier plan, the premium plans allow for embedding
 
 We want only to grab the URL (https://play.stageten.tv/embed/XXXXXXX-AAAA-BBBB-YYYYYYYYY) from the embed code, and not the entire code block.
 
-<img src="https://user-images.githubusercontent.com/2575698/203493911-7b225b92-81a4-40f9-ba47-d51738253aad.png" height="170" />
+<img src="https://user-images.githubusercontent.com/2575698/203493911-7b225b92-81a4-40f9-ba47-d51738253aad.png" height="250" />
 
 We can then go live in Stage TEN, selecting the Stage TEN Interactive Player's output as the destination. 
 
