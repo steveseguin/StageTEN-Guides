@@ -8,6 +8,8 @@ Useful for adding additional content layers to your Stage TEN video via OBS, or 
 
 [Jump there now](https://github.com/steveseguin/StageTEN-Guides/blob/main/publishing-to-OBS.md)
 
+<img src="https://user-images.githubusercontent.com/2575698/203503355-5e535be4-810b-4f47-ab9f-bd56465c85bd.png" width="250" />
+
 ### How to add the individual solo guest feeds from Stage TEN into OBS
 
 A guide for this is coming soon.
