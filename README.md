@@ -6,7 +6,7 @@ This is a set of unofficial guides and resources with resepect to Stage TEN
 
 Useful for adding additional content layers to your Stage TEN video via OBS, or allowing for seamless switching between multiple Stage TEN studios.  This option is available for premium account holders.
 
-### [Jump there now](https://github.com/steveseguin/StageTEN-Guides/blob/main/publishing-to-OBS.md) 
+#### [Jump there now](https://github.com/steveseguin/StageTEN-Guides/blob/main/publishing-to-OBS.md) 
 
 <img src="https://user-images.githubusercontent.com/2575698/203494522-90279f82-b99b-44f6-9851-90000c7a6835.png" height="120" /> <img src="https://user-images.githubusercontent.com/2575698/203503355-5e535be4-810b-4f47-ab9f-bd56465c85bd.png" height="120" />
 
