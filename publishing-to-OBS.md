@@ -1,6 +1,6 @@
 # How to publish from Stage TEN into OBS Studio
 
-This is an unofficial guide on using the main Stage TEN as a video source in OBS
+This is an unofficial guide on using the main Stage TEN output as a video source in OBS
 
 ### Going from Stage TEN main output into OBS Studio
 
