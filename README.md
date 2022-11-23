@@ -2,9 +2,7 @@
 
 This is an unofficial guide on using Stage TEN as a video source for OBS
 
-<img src="https://user-images.githubusercontent.com/2575698/203494522-90279f82-b99b-44f6-9851-90000c7a6835.png" width="300" />
-<img src="https://user-images.githubusercontent.com/2575698/203493911-7b225b92-81a4-40f9-ba47-d51738253aad.png" width="300" />
-<img src="https://user-images.githubusercontent.com/2575698/203493652-d81e92f9-e21e-4489-9273-3b8f4863cd16.png" width="300" />
+<img src="https://user-images.githubusercontent.com/2575698/203494522-90279f82-b99b-44f6-9851-90000c7a6835.png" width="300" /><img src="https://user-images.githubusercontent.com/2575698/203493911-7b225b92-81a4-40f9-ba47-d51738253aad.png" width="300" /><img src="https://user-images.githubusercontent.com/2575698/203493652-d81e92f9-e21e-4489-9273-3b8f4863cd16.png" width="300" />
 
 
 Ensure you check the box `Control audio via OBS`, otherwise you might get echo or no audio capture in OBS.
