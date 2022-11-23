@@ -1,6 +1,6 @@
 # Stage TEN Guides
 
-This is a set of unofficial guides and resources with resepect to Stage TEN
+This is a set of unofficial guides and resources with respect to Stage TEN
 
 ## How to add the main output of Stage TEN into OBS Studio
 
