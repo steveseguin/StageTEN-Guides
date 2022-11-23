@@ -1,4 +1,7 @@
-# stageten_guide
+# Stage TEN into OBS guide
+
+This is an unofficial guide on using Stage TEN as a video source for OBS
+
 
 
 Ensure you check the box `Control audio via OBS`, otherwise you might get echo or no audio capture in OBS.
