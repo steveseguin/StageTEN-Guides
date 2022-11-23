@@ -6,12 +6,20 @@ This is an unofficial guide on using Stage TEN as a video source for OBS
 
 While not available to the free-tier plan, the premium plans allow for embedding the output of Stage TEN into a third-party website, such as your own website, or even into OBS Studio with some tweaking. This embed code is available in the Stage TEN destination settings.
 
-<img src="https://user-images.githubusercontent.com/2575698/203494522-90279f82-b99b-44f6-9851-90000c7a6835.png" height="170" /><img src="https://user-images.githubusercontent.com/2575698/203493911-7b225b92-81a4-40f9-ba47-d51738253aad.png" height="170" />
+<img src="https://user-images.githubusercontent.com/2575698/203494522-90279f82-b99b-44f6-9851-90000c7a6835.png" height="170" />
 
 We want only to grab the URL (https://play.stageten.tv/embed/XXXXXXX-AAAA-BBBB-YYYYYYYYY) from the embed code, and not the entire code block.
 
-<img src="https://user-images.githubusercontent.com/2575698/203493652-d81e92f9-e21e-4489-9273-3b8f4863cd16.png" height="170" />
+<img src="https://user-images.githubusercontent.com/2575698/203493911-7b225b92-81a4-40f9-ba47-d51738253aad.png" height="170" />
 
+We can then go live in Stage TEN, selecting the Stage TEN Interactive Player's output as the destination. 
+
+mg src="https://user-images.githubusercontent.com/2575698/203497924-8e9371fc-9098-4409-883d-857fc99e0bbb.png" height="170" />
+
+
+If we open the URL we extracted from the embed code now in our browser, we should see the output of Stage TEN.  There might be a chat-section and some other components visible, but we can remove those once we add the video to OBS.
+
+<img src="https://user-images.githubusercontent.com/2575698/203493652-d81e92f9-e21e-4489-9273-3b8f4863cd16.png" height="170" />
 
 Ensure you check the box `Control audio via OBS`, otherwise you might get echo or no audio capture in OBS.
 
