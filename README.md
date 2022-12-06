@@ -14,7 +14,16 @@ Useful for adding additional content layers to your Stage TEN video via OBS, or 
 
 ## How to add the individual solo guest feeds from Stage TEN into OBS
 
-A guide for this is coming soon.
+A video guide on adding remote Stage TEN performers into OBS via the solo-link feature
+
+[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi_webp/ZWJAFaJ3n28/mqdefault.webp?v=638e75e7&sqp=COTRvJwG&rs=AOn4CLAgdsArO_jNC0bSYP7O6zRw2Zo1xw)](https://youtu.be/ZWJAFaJ3n28)
+
+https://youtu.be/ZWJAFaJ3n28
+
+
+### Coupon code
+
+While it may not be available forever, currently there is a 20% off code for Stage TEN. It is: VDONINJA
 
 
 ## Support
