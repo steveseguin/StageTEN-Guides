@@ -21,9 +21,9 @@ A video guide on adding remote Stage TEN performers into OBS via the solo-link f
 https://youtu.be/ZWJAFaJ3n28
 
 
-### Coupon code
+### Promo code
 
-While it may not be available forever, currently there is a 20% off code for Stage TEN. It is: VDONINJA
+While it may not be available forever, currently there is a 20% off coupon code for Stage TEN. It is: VDONINJA
 
 
 ## Support
