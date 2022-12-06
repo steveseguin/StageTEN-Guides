@@ -23,7 +23,9 @@ https://youtu.be/ZWJAFaJ3n28
 
 ### Promo code
 
-While it may not be available forever, currently there is a 20% off coupon code for Stage TEN. It is: VDONINJA
+While it may not be available forever, currently there is a 20% off coupon code for Stage TEN. It is: VDONINJA   
+
+There's no commission in it for me if you use this discount code, however using it does help shape the upcoming features being added to Stage TEN. 
 
 
 ## Support
