@@ -16,8 +16,6 @@ Useful for adding additional content layers to your Stage TEN video via OBS, or 
 
 A video guide on adding remote Stage TEN performers into OBS via the solo-link feature
 
-[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi_webp/ZWJAFaJ3n28/mqdefault.webp?v=638e75e7&sqp=COTRvJwG&rs=AOn4CLAgdsArO_jNC0bSYP7O6zRw2Zo1xw)](https://youtu.be/ZWJAFaJ3n28)
-
 https://youtu.be/ZWJAFaJ3n28
 
 
