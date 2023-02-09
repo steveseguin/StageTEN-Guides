@@ -28,7 +28,9 @@ In OBS, we want to create a Browser source. This is just like adding a video dev
 
 In the browser source settings, let's add our Stage TEN embed URL to the URL section.
 
-Let's also ensure the Width is set to `1920` and the Height is set to `1080`.
+If our content is of standard 16:9 landscape format, we can set the Width is set to `1920` and the Height is set to `1080`.
+
+If our content is vertical 9:16 portrait format though, we can set the Width to `1080` and Height to `1920`.
 
 We then need to to check the box `Control audio via OBS`, otherwise the stream's audio won't be captured by OBS.
 
@@ -46,7 +48,6 @@ The end results should look a bit like the following:
 
 We should now be able to see our Stage TEN output as a clean isolated video source in OBS, with very little delay.  If we stop the output of Stage TEN, it will also stop the video going into OBS Studio. If we go live in Stage TEN again, and select the `Stage TEN Interactive Player`, the video will appear in OBS again.  Once this has been setup, we do not need to reconfigure the settings, making the initial setup a generally one-time ordeal.
 
-
 <img src="https://user-images.githubusercontent.com/2575698/203503355-5e535be4-810b-4f47-ab9f-bd56465c85bd.png" width="550" />
 
 We can apply any overlay we want on to this video in OBS, dynamic or otherwise, and then publish our OBS video mix to Youtube.
@@ -56,6 +57,13 @@ Guests within Stage TEN will see the video as well, minus any overlays that were
 Whoever is managing OBS in this setup simply needs a stable and wired Internet connection, and the ability to start/stop the stream before and after the Stage TEN video itself starts and stops.
 
 If at any point control of the Stage TEN studio needs to be transferred to a different guest, or the studio needs to be restarted, the output to Youtube itself will not be interrupted in this setup. Only if OBS stops publishing will the stream stop.  It would be possible to even switch between two different Stage TEN outputs in OBS, allowing for one creator to take over for another creator mid-stream, without the show being interrupted.
+
+
+#### Boosting text sharpness a bit
+
+If we want to increase the sharpness of text and overlays, we can increase the sharpness of the browser source. To do so, right-click the browser source in OBS, select `Filters` from the context menu, and then add a `Sharpen` effect filter. A little sharpness can go a long way to combating any aliasing effects or soft text lettering, and it shouldn't be needed for most types of content.
+
+![image](https://user-images.githubusercontent.com/2575698/217954418-4fc7ce42-2efc-40dc-bee6-e5b5093d34f7.png)
 
 
 ##### Support
