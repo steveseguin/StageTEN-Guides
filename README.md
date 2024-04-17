@@ -27,6 +27,12 @@ A video guide on how to bring video in from multiple OBS Studios via low-latency
 
 https://youtu.be/ogw1uuhuJi0
 
+## How to publish from a GoPro into OBS via StageTEN
+
+A video guide on how to bring GoPro footage or other RTMP sources into OBS via StageTEN
+
+https://www.youtube.com/watch?v=MGA4bx7FRC4
+
 ### Promo code
 
 While it may not be available forever, currently there is a 20% off coupon code for Stage TEN. It is: VDONINJA   
