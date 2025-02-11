@@ -42,6 +42,16 @@ div>video{margin:0 auto!important;width:100vw!important;height:100vh!important;z
 video{width:100%!important;height:100%!important;display:block;margin:0 auto;padding:0;background-color:#0000!important;object-fit:contain!important}
 ```
 
+In the case you want to see the play button on the video if it starts muted, the following CSS should show the play button until clicked. You can use it instead in this case:
+```
+div{background-color:#0000!important;}
+section{width:0;height:0;background-color:#0000!important}
+div>video{margin:0 auto!important;width:100vw!important;height:100vh!important;;position:fixed;top:0!important;right:0!important;display:block!important;background-color:#0000}
+video{width:100%!important;height:100%!important;display:block;margin:0 auto;padding:0;background-color:#0000!important;object-fit:contain!important}
+[class*="mainView_sidePanel"],[class*="MobileVideoOverlayLaye"], [class*="DesktopVideoOverlayLayer"], .animation-target, h2, [class*="UnmuteButton_unmuteButtonText"] {
+	display:none!important;
+}
+```
 The end results should look a bit like the following:
 
 <img src="https://user-images.githubusercontent.com/2575698/203493136-7c850584-4936-46cc-976b-e27c6e3cd9df.png" width="350" />
