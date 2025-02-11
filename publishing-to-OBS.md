@@ -48,9 +48,7 @@ div{background-color:#0000!important;}
 section{width:0;height:0;background-color:#0000!important}
 div>video{margin:0 auto!important;width:100vw!important;height:100vh!important;;position:fixed;top:0!important;right:0!important;display:block!important;background-color:#0000}
 video{width:100%!important;height:100%!important;display:block;margin:0 auto;padding:0;background-color:#0000!important;object-fit:contain!important}
-[class*="mainView_sidePanel"],[class*="MobileVideoOverlayLaye"], [class*="DesktopVideoOverlayLayer"], .animation-target, h2, [class*="UnmuteButton_unmuteButtonText"] {
-	display:none!important;
-}
+[class*="mainView_sidePanel"],[class*="MobileVideoOverlayLaye"], [class*="DesktopVideoOverlayLayer"], .animation-target, h2, [class*="UnmuteButton_unmuteButtonText"] {display:none!important;}
 ```
 The end results should look a bit like the following:
 
