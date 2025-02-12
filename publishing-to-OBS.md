@@ -12,7 +12,7 @@ Premium plans allow embedding Stage TEN output into third-party websites or OBS 
 - Opening this URL in your browser will show the Stage TEN output with chat sections and other components (these will be removed in OBS)
 
 > **[UPDATE: Feb 11th 2025]**  
-> Use the SDK URL instead: `https://play.stageten.tv/sdk/2023-03/channel/XXXXXXXAAAABBBBYYYYYYYYY`  
+> Use the SDK URL instead: ```https://play.stageten.tv/sdk/2023-03/channel/XXXXXXXAAAABBBBYYYYYYYYY```
 > This provides cleaner video output with auto-playing audio, preferred until a dedicated clean URL option is added.
 
 ### 2. Going Live in Stage TEN
