@@ -1,77 +1,59 @@
-# How to publish from Stage TEN into OBS Studio
+# Publishing from Stage TEN to OBS Studio
+*An unofficial guide for using Stage TEN output as a video source in OBS*
 
-This is an unofficial guide on using the main Stage TEN output as a video source in OBS
+## Overview
+Premium plans allow embedding Stage TEN output into third-party websites or OBS Studio. This guide covers the OBS Studio integration process.
 
-### Going from Stage TEN main output into OBS Studio
+## Setup Process
 
-While not available to the free-tier plan, the premium plans allow for embedding the output of Stage TEN into a third-party website, such as your own website, or even into OBS Studio with some tweaking. This embed code is available in the Stage TEN destination settings.
+### 1. Getting the Stage TEN URL
+- Find the embed code in Stage TEN destination settings
+- Extract only the URL (e.g., `https://play.stageten.tv/embed/XXXXXXXAAAABBBBYYYYYYYYY`)
 
-<img src="https://user-images.githubusercontent.com/2575698/203494522-90279f82-b99b-44f6-9851-90000c7a6835.png" height="170" />
+> **[UPDATE: Feb 11th 2025]**  
+> Use the SDK URL instead: `https://play.stageten.tv/sdk/2023-03/channel/XXXXXXXAAAABBBBYYYYYYYYY`  
+> This provides cleaner video output with auto-playing audio, preferred until a dedicated clean URL option is added.
 
-Since we are adding this video to OBS though, and not a website, we only want to grab the URL (https://play.stageten.tv/embed/XXXXXXXAAAABBBBYYYYYYYYY) from the embed code; not the entire code block.
+### 2. Going Live in Stage TEN
+1. Start your Stage TEN broadcast
+2. Select "Stage TEN Interactive Player" as the destination
+3. The video output should now be visible in your browser
 
-[UPDATE: Feb 11th 2025]
-Instead of using the /embed/ URL, you can use the /sdk/ URL, which is this: https://play.stageten.tv/sdk/2023-03/channel/XXXXXXXAAAABBBBYYYYYYYYY
+### 3. OBS Configuration
 
-The Embed URL is not a clean video output currently, while the SDK output URL is clean and the audio auto-plays.  So at present, we want to use that until a dedicated clean URL option is added to the the StageTEN list of links.
-[END OF UPDATE]
+#### Creating the Browser Source
+1. In OBS, add a new Browser source
+2. Configure the dimensions:
+   - For 16:9 landscape: Width `1920`, Height `1080`
+   - For 9:16 portrait: Width `1080`, Height `1920`
+3. Enable "Control audio via OBS"
 
-<img src="https://user-images.githubusercontent.com/2575698/203493911-7b225b92-81a4-40f9-ba47-d51738253aad.png" height="250" />
+#### For Embed URL Users Only
+If using the embed URL (not SDK), add this Custom CSS to remove extra elements:
 
-We can then go live in Stage TEN, selecting the Stage TEN Interactive Player's output as the destination. 
-
-<img src="https://user-images.githubusercontent.com/2575698/203497924-8e9371fc-9098-4409-883d-857fc99e0bbb.png" height="170" />
-
-
-If we open the URL we extracted from the embed code now in our browser, we should see the output of Stage TEN.  There might be a chat-section and some other components visible, but we can remove those once we add the video to OBS in the next steps.
-
-<img src="https://user-images.githubusercontent.com/2575698/203493652-d81e92f9-e21e-4489-9273-3b8f4863cd16.png" height="170" />
-
-In OBS, we want to create a Browser source. This is just like adding a video device to OBS, but from the menu of options, we select `Browser`.
-
-<img src="https://user-images.githubusercontent.com/2575698/203499296-b34b0a08-7d0f-4948-b2f8-8058c18e2aed.png" height="250" />
-
-In the browser source settings, let's add our Stage TEN embed URL to the URL section.
-
-If our content is of standard 16:9 landscape format, we can set the Width is set to `1920` and the Height is set to `1080`.
-
-If our content is vertical 9:16 portrait format though, we can set the Width to `1080` and Height to `1920`.
-
-We then need to to check the box `Control audio via OBS`, otherwise the stream's audio won't be captured by OBS.
-
-Lastly, if we are using the Embed URL, to remove the Stage TEN chat box and other styling effects, we need to add the following to the `Custom CSS` field in the OBS Browser source:
-
-```
+```css
 div{background-color:#0000!important;}
 section{width:0;height:0;background-color:#0000!important}
 div>video{margin:0 auto!important;width:100vw!important;height:100vh!important;;position:fixed;top:0!important;right:0!important;display:block!important;background-color:#0000}
 video{width:100%!important;height:100%!important;display:block;margin:0 auto;padding:0;background-color:#0000!important;object-fit:contain!important}
 [class*="mainView_sidePanel"],[class*="MobileVideoOverlayLaye"], [class*="DesktopVideoOverlayLayer"], .animation-target, h2, [class*="UnmuteButton_unmuteButtonText"] {display:none!important;}
 ```
-Please note, the above CSS step isn't needed if using the SDK URL, (eg: https://play.stageten.tv/sdk/2023-03/channel/XXXXXXXX). The end results should look a bit like the following, however you may see a play button appear if the video does not auto-play.  If you do see a play button in OBS for this browser source, right-click the source, select Interact, and then click the play button.
 
-<img src="https://user-images.githubusercontent.com/2575698/203493136-7c850584-4936-46cc-976b-e27c6e3cd9df.png" width="350" />
+## Additional Features
 
-We should now be able to see our Stage TEN output as a clean isolated video source in OBS, with very little delay.  If we stop the output of Stage TEN, it will also stop the video going into OBS Studio. If we go live in Stage TEN again, and select the `Stage TEN Interactive Player`, the video will appear in OBS again.  Once this has been setup, we do not need to reconfigure the settings, making the initial setup a generally one-time ordeal.
+### Text Sharpness Enhancement
+To improve text clarity:
+1. Right-click the browser source
+2. Select "Filters"
+3. Add a "Sharpen" effect filter
+   - Use minimally - a little goes a long way
+   - Primarily helps with text and overlay clarity
 
-<img src="https://user-images.githubusercontent.com/2575698/203503355-5e535be4-810b-4f47-ab9f-bd56465c85bd.png" width="550" />
+## Important Notes
+- Stream continues uninterrupted if Stage TEN studio control transfers between guests
+- OBS operator needs stable, wired internet connection
+- Can switch between multiple Stage TEN outputs mid-stream
+- Setup is generally one-time - settings persist between sessions
 
-We can apply any overlay we want on to this video in OBS, dynamic or otherwise, and then publish our OBS video mix to Youtube.
-
-Guests within Stage TEN will see the video as well, minus any overlays that were added in OBS.
-
-Whoever is managing OBS in this setup simply needs a stable and wired Internet connection, and the ability to start/stop the stream before and after the Stage TEN video itself starts and stops.
-
-If at any point control of the Stage TEN studio needs to be transferred to a different guest, or the studio needs to be restarted, the output to Youtube itself will not be interrupted in this setup. Only if OBS stops publishing will the stream stop.  It would be possible to even switch between two different Stage TEN outputs in OBS, allowing for one creator to take over for another creator mid-stream, without the show being interrupted.
-
-
-#### Boosting text sharpness a bit
-
-If we want to increase the sharpness of text and overlays, we can increase the sharpness of the browser source. To do so, right-click the browser source in OBS, select `Filters` from the context menu, and then add a `Sharpen` effect filter. A little sharpness can go a long way to combating any aliasing effects or soft text lettering, and it shouldn't be needed for most types of content.
-
-![image](https://user-images.githubusercontent.com/2575698/217954418-4fc7ce42-2efc-40dc-bee6-e5b5093d34f7.png)
-
-
-##### Support
-Premium users of Stage TEN can Ping Steve on the Stage TEN Discord server at https://discord.com/invite/y2yKVBm for live help with this feature and setup, although please understand it is not an official feature offered by Stage TEN and it's access may be removed at any time
-
+## Support
+Premium users can contact Steve on the [Stage TEN Discord](https://discord.com/invite/y2yKVBm) for setup assistance. Note that this is an unofficial feature and access may change.
