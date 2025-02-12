@@ -8,7 +8,13 @@ While not available to the free-tier plan, the premium plans allow for embedding
 
 <img src="https://user-images.githubusercontent.com/2575698/203494522-90279f82-b99b-44f6-9851-90000c7a6835.png" height="170" />
 
-Since we are adding this video to OBS though, and not a website, we only want to grab the URL (https://play.stageten.tv/embed/XXXXXXX-AAAA-BBBB-YYYYYYYYY) from the embed code; not the entire code block.
+Since we are adding this video to OBS though, and not a website, we only want to grab the URL (https://play.stageten.tv/embed/XXXXXXXAAAABBBBYYYYYYYYY) from the embed code; not the entire code block.
+
+[UPDATE: Feb 11th 2025]
+Instead of using the /embed/ URL, you can use the /sdk/ URL, which is this: https://play.stageten.tv/sdk/2023-03/channel/XXXXXXXAAAABBBBYYYYYYYYY
+
+The Embed URL is not a clean video output currently, while the SDK output URL is clean and the audio auto-plays.  So at present, we want to use that until a dedicated clean URL option is added to the the StageTEN list of links.
+[END OF UPDATE]
 
 <img src="https://user-images.githubusercontent.com/2575698/203493911-7b225b92-81a4-40f9-ba47-d51738253aad.png" height="250" />
 
@@ -20,7 +26,6 @@ We can then go live in Stage TEN, selecting the Stage TEN Interactive Player's o
 If we open the URL we extracted from the embed code now in our browser, we should see the output of Stage TEN.  There might be a chat-section and some other components visible, but we can remove those once we add the video to OBS in the next steps.
 
 <img src="https://user-images.githubusercontent.com/2575698/203493652-d81e92f9-e21e-4489-9273-3b8f4863cd16.png" height="170" />
-
 
 In OBS, we want to create a Browser source. This is just like adding a video device to OBS, but from the menu of options, we select `Browser`.
 
@@ -34,15 +39,8 @@ If our content is vertical 9:16 portrait format though, we can set the Width to 
 
 We then need to to check the box `Control audio via OBS`, otherwise the stream's audio won't be captured by OBS.
 
-Lastly, to remove the Stage TEN chat box and other styling effects, we need to add the following to the `Custom CSS` field in the OBS Browser source:
-```
-div{background-color:#0000!important;width:0;height:0}
-section{width:0;height:0;background-color:#0000!important}
-div>video{margin:0 auto!important;width:100vw!important;height:100vh!important;z-index:9999!important;position:fixed;top:0!important;right:0!important;display:block!important;background-color:#0000}
-video{width:100%!important;height:100%!important;display:block;margin:0 auto;padding:0;background-color:#0000!important;object-fit:contain!important}
-```
+Lastly, if we are using the Embed URL, to remove the Stage TEN chat box and other styling effects, we need to add the following to the `Custom CSS` field in the OBS Browser source:
 
-In the case you want to see the play button on the video if it starts muted, the following CSS should show the play button until clicked. You can use it instead in this case:
 ```
 div{background-color:#0000!important;}
 section{width:0;height:0;background-color:#0000!important}
@@ -50,7 +48,7 @@ div>video{margin:0 auto!important;width:100vw!important;height:100vh!important;;
 video{width:100%!important;height:100%!important;display:block;margin:0 auto;padding:0;background-color:#0000!important;object-fit:contain!important}
 [class*="mainView_sidePanel"],[class*="MobileVideoOverlayLaye"], [class*="DesktopVideoOverlayLayer"], .animation-target, h2, [class*="UnmuteButton_unmuteButtonText"] {display:none!important;}
 ```
-The end results should look a bit like the following:
+Please note, the above CSS step isn't needed if using the SDK URL, (eg: https://play.stageten.tv/sdk/2023-03/channel/XXXXXXXX). The end results should look a bit like the following, however you may see a play button appear if the video does not auto-play.  If you do see a play button in OBS for this browser source, right-click the source, select Interact, and then click the play button.
 
 <img src="https://user-images.githubusercontent.com/2575698/203493136-7c850584-4936-46cc-976b-e27c6e3cd9df.png" width="350" />
 
